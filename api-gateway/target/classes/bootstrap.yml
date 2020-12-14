@@ -1,0 +1,18 @@
+server:
+  port: 56010
+spring:
+  application:
+    name: api-gateway
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 101.37.160.42:8848
+        namespace: 7ff27ccd-6a42-4fee-b5ab-5ccb6c7fd54e
+        cluster-name: DEFAULT
+      config:
+        server-addr: 101.37.160.42:8848
+        file-extension: yaml
+        namespace: 7ff27ccd-6a42-4fee-b5ab-5ccb6c7fd54e
+        group: NACOS_MICROSERVICE_GROUP
