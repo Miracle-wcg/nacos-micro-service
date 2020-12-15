@@ -8,6 +8,8 @@
         <module>service-1</module>
         <module>service-2</module>
         <module>api-gateway</module>
+        <module>sentinel-service8401</module>
+        <module>gateway-sentinel-server</module>
     </modules>
     <groupId>com.springcloud.wcg</groupId>
     <artifactId>nacos-micro-service</artifactId>

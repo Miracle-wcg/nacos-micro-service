@@ -1,0 +1,17 @@
+server:
+  port: 8401
+spring:
+  application:
+    name: sentinel-service
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 101.37.160.42:8848
+        namespace: 7ff27ccd-6a42-4fee-b5ab-5ccb6c7fd54e
+        cluster-name: DEFAULT
+    sentinel:
+      transport:
+        dashboard: 101.37.160.42:8858 #配置sentinel dashboard地址
+        port: 8719 #默认8719端口，假如被占用会自动从8719开始一次+1扫描，直至找到为被占用的端口
