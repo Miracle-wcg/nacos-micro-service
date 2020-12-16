@@ -1,0 +1,15 @@
+server:
+  port: 8601
+  servlet:
+    context-path: /nacos-provider
+spring:
+  application:
+    name: nacos-provider
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.3.4:8848
+        namespace: cbaf301d-14b9-400b-a541-7f351f1512e1
+        cluster-name: DEFAULT

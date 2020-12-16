@@ -1,0 +1,15 @@
+server:
+  port: 8701
+  servlet:
+    context-path: /nacos-openfegin
+spring:
+  application:
+    name: nacos-openfegin
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.3.4:8848
+        namespace: cbaf301d-14b9-400b-a541-7f351f1512e1
+        cluster-name: DEFAULT
