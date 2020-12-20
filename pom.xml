@@ -12,6 +12,7 @@
         <module>gateway-sentinel-server</module>
         <module>nacos-openfegin</module>
         <module>nacos-provider</module>
+        <module>stream-rabbitmq-provider8801</module>
     </modules>
     <groupId>com.springcloud.wcg</groupId>
     <artifactId>nacos-micro-service</artifactId>

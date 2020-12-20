@@ -1,0 +1,36 @@
+server:
+  port: 8801
+spring:
+  application:
+    name: stream-rabbit-provider
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.3.4:8848
+        namespace: cbaf301d-14b9-400b-a541-7f351f1512e1
+        cluster-name: DEFAULT
+    stream:
+      bindings:
+        output:
+          destination: studyExchange
+          content-type: application/json
+          binder: defaultRabbit
+      binders:
+        defaultRabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: 192.168.161.2
+                port: 5672
+                username: admin
+                password: admin
+                virtual-host: /
+  rabbitmq:
+    host: 192.168.161.2
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /
